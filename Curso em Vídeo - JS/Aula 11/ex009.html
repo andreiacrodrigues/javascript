@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados pessoais</title>
+    <h1>Tratamento de dados</h1>
+    <style>
+        body{
+            background-color:darkolivegreen;  
+            color: black;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+   O meu nome é: 
+   <input type="text" name="nome" id="nome"> 
+    </br>
+   A minha idade é: 
+   <input type="number" name="idade" id="idade"> 
+    </br>
+   Sou natural de: 
+   <input type="text" name="pais" id="pais">
+   <input type="button" value="Validação" onclick= "validar()" >
+   <div id="res"> Conclusão: </div> 
+
+    <script>
+      
+        function validar() {
+            var elementName = window.document.getElementById("nome")
+            var elementAge = window.document.getElementById("idade")
+            var elementCountry = window.document.getElementById("pais")
+    
+            var age = Number(elementAge.value)
+            var p = elementCountry.value
+            
+            var res = window.document.getElementById("res")
+            res.innerHTML = `<p> Jovem ${elementName.value} de ${Number(elementAge.value)} anos, tenha um bom dia! </p>`
+
+           if (age < 18) {
+                res.innerHTML += `<p> Ainda é menor de idade! </p>`
+            } 
+            else {
+                res.innerHTML += `<p> Parabéns! Já é maior de idade! </p>`
+            }
+            
+
+            if (p == "portugal") {
+                res.innerText += ` Aproveite viver neste país maravilhoso!`
+            } 
+            else {
+                res.innerText += ` Aproveite e descubra este país!`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

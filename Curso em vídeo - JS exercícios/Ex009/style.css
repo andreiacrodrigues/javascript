@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+}
+
+header {
+    color: black;
+    font: normal 20pt Comic;
+    font-weight: bold;
+}
+
+button {
+    font: normal 15pt Arial;
+    padding: 30px;
+    text-align: center;   
+}
+
+div {
+    font: normal 12pt Arial;
+}
+
+

@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+header {
+    color: black;
+    font: normal 25pt Arial;
+    font-weight: bold;
+}
+
+button {
+    font: normal 15pt Arial;
+    padding: 30px;
+    text-align: center;   
+}
+
+div {
+    font: normal 15pt Arial; 
+}
+
+
+

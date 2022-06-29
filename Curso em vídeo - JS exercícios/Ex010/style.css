@@ -1,0 +1,29 @@
+
+body {
+    background-color: white;
+    
+}
+
+header {
+    color: black;
+    font: normal 15pt Verdana;
+    font-weight: bold;
+    
+}
+
+button {
+    font: normal 15pt Arial;
+    padding: 30px;
+    text-align: center;  
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;   
+}
+
+div {
+    font: normal 12pt Verdana;
+}
+
+
+
+
